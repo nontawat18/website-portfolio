@@ -1,11 +1,13 @@
 <template>
   <div>
     <v-app-bar
-      elevation="0"
-      height="115"
+     
+      height="120"
       color="#ffffff"
       app
       class="pa-1"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
     >
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
@@ -13,22 +15,22 @@
 
       <v-spacer></v-spacer>
       <v-row align="center" >
-        <v-col class="pb-0" cols="4" sm="4" md="2">
+        <v-col class="pb-0 text-center" cols="4" sm="4" md="2">
           <v-btn text rounded to="/"> Home </v-btn>
         </v-col>
-        <v-col class="pb-0" cols="4" sm="4" md="2">
+        <v-col class="pb-0 text-center" cols="4" sm="4" md="2">
           <v-btn text rounded to="/about"> About </v-btn>
         </v-col>
-        <v-col class="pb-0" cols="4" sm="4" md="2">
+        <v-col class="pb-0 text-center" cols="4" sm="4" md="2">
           <v-btn text rounded to="/skills"> Skills </v-btn>
         </v-col>
         <!-- <v-col class="pb-0" cols="4" sm="4" md="2">
           <v-btn text rounded> Services </v-btn>
         </v-col> -->
-        <v-col class="pb-0" cols="4" sm="4" md="2">
+        <v-col class="pb-0 text-center" cols="6" sm="6" md="2">
           <v-btn text rounded to="/portfolio"> Portfolio </v-btn>
         </v-col>
-        <v-col class="pb-0" cols="4" sm="4" md="2">
+        <v-col class="pb-0 text-center" cols="6" sm="6" md="2">
           <v-btn text rounded to="/contact"> Contact </v-btn>
         </v-col>
       </v-row>

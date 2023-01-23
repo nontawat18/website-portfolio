@@ -1,14 +1,12 @@
 <template>
   <v-app dark>
     <Navbar />
-    <v-main>
+    <v-main id="scrolling-techniques-7" class="overflow-y-auto">
       <v-col>
-
-      <!-- <v-container> -->
+        <!-- <v-container> -->
         <Nuxt />
-      <!-- </v-container> -->
-    </v-col>
-
+        <!-- </v-container> -->
+      </v-col>
     </v-main>
 
     <v-footer :absolute="!fixed" app>
