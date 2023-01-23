@@ -4,7 +4,7 @@
       <h1 style="color: #424242; padding: 8px">About Me</h1>
       <p style="color: grey; padding: 8px">My Introdruction</p>
     </v-col>
-    <v-row class="pt-4">
+    <v-row class="pt-4 pb-10">
       <v-col cols="12" sm="6" md="6" class="text-center">
         <v-card class="mx-auto" width="500" elevation="5">
           <v-img
@@ -75,122 +75,137 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-col cols="12" sm="12" md="12" class="pt-16  text-center">
-      <v-card class="mx-auto" width="800" elevation="0">
-        <v-row>
-          <v-col cols="12" sm="12" md="12">
-            <v-icon large right> mdi-school </v-icon>
-            <h1 style="color: #424242; padding: 8px">Educations</h1>
-          </v-col>
-        </v-row>
-        <v-timeline>
-          <v-timeline-item large>
-            <template v-slot:icon>
-              <v-avatar>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
-                />
-              </v-avatar>
-            </template>
-            <template v-slot:opposite>
-              <span>High school </span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="text-h5">
-                Cheang Yuan Pittayakom School
-              </v-card-title>
-              <v-card-text>Math-Science </v-card-text>
-            </v-card>
-          </v-timeline-item>
-          <v-timeline-item large>
-            <template v-slot:icon>
-              <v-avatar>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
-                />
-              </v-avatar>
-            </template>
-            <template v-slot:opposite>
-              <span>Bachelor’s Degree </span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="text-h5">
-                Rajamangala University of Technology Isan Khonkaen Campus
-              </v-card-title>
-              <v-card-text>Computer Engineering</v-card-text>
-            </v-card>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card>
-    </v-col>
-    <v-col cols="12" sm="12" md="12" class="pt-16  text-center">
-      <v-card class="mx-auto" width="800" elevation="0">
-        <v-row>
-          <v-col cols="12" sm="12" md="12">
-            <v-icon large right> mdi-briefcase-arrow-up-down </v-icon>
-            <h1 style="color: #424242; padding: 8px">Experience</h1>
-          </v-col>
-        </v-row>
-        <v-timeline>
-          <v-timeline-item large>
-            <template v-slot:icon>
-              <v-avatar>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
-                />
-              </v-avatar>
-            </template>
-            <template v-slot:opposite>
-              <span>2021 (intern)</span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="text-h5">
-               KhonKean Univercity
-              </v-card-title>
-              <v-card-text>Programmer</v-card-text>
-            </v-card>
-          </v-timeline-item>
-          <v-timeline-item large>
-            <template v-slot:icon>
-              <v-avatar>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
-                />
-              </v-avatar>
-            </template>
-            <template v-slot:opposite>
-              <span>2021 - 2022</span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="text-h5">
-                Morange solution MGC Electrotechno (Thailand).Co.,Ltd
-              </v-card-title>
-              <v-card-text>Front-End Developper</v-card-text>
-            </v-card>
-          </v-timeline-item>
-          <v-timeline-item large>
-            <template v-slot:icon>
-              <v-avatar>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
-                />
-              </v-avatar>
-            </template>
-            <template v-slot:opposite>
-              <span>2022 - Present</span>
-            </template>
-            <v-card class="elevation-2">
-              <v-card-title class="text-h5">
-                MGC Electrotechno (Thailand).Co.,Ltd
-              </v-card-title>
-              <v-card-text>IT Staff</v-card-text>
-            </v-card>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card>
-    </v-col>
+
+    <v-tabs v-model="tab" background-color="wihte" centered icons-and-text color="grey darken-3" class="pb-6">
+      <v-tabs-slider></v-tabs-slider>
+
+      <v-tab href="#tab-1" >
+        Educations
+        <v-icon>mdi-school</v-icon>
+      </v-tab>
+
+      <v-tab href="#tab-2">
+        Experience
+        <v-icon>mdi-briefcase-arrow-up-down</v-icon>
+      </v-tab>
+    </v-tabs>
+
+    <v-tabs-items v-model="tab">
+      <v-tab-item :value="'tab-1'">
+        <v-card class="mx-auto" width="800" elevation="0">
+          <v-timeline>
+            <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                  />
+                </v-avatar>
+              </template>
+              <template v-slot:opposite>
+                <span>High school </span>
+              </template>
+              <v-card class="elevation-2">
+                <v-card-title class="">
+                  Cheang Yuan Pittayakom School
+                </v-card-title>
+                <v-card-text>Math-Science </v-card-text>
+              </v-card>
+            </v-timeline-item>
+            <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                  />
+                </v-avatar>
+              </template>
+              <template v-slot:opposite>
+                <span>Bachelor’s Degree </span>
+              </template>
+              <v-card class="elevation-2">
+                <v-card-title class="">
+                  Rajamangala University of Technology Isan Khonkaen Campus
+                </v-card-title>
+                <v-card-text>Computer Engineering</v-card-text>
+              </v-card>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card>
+      </v-tab-item>
+      <v-tab-item :value="'tab-2'">
+        <v-card class="mx-auto" width="800" elevation="0">
+          <v-timeline>
+            <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                  />
+                </v-avatar>
+              </template>
+              <template v-slot:opposite>
+                <span>2021 (intern)</span>
+              </template>
+              <v-card class="elevation-2">
+                <v-card-title class="">
+                  KhonKean Univercity
+                </v-card-title>
+                <v-card-text>Programmer</v-card-text>
+              </v-card>
+            </v-timeline-item>
+            <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                  />
+                </v-avatar>
+              </template>
+              <template v-slot:opposite>
+                <span>2021 - 2022</span>
+              </template>
+              <v-card class="elevation-2">
+                <v-card-title class="">
+                  Morange solution MGC Electrotechno (Thailand).Co.,Ltd
+                </v-card-title>
+                <v-card-text>Front-End Developper</v-card-text>
+              </v-card>
+            </v-timeline-item>
+            <v-timeline-item large>
+              <template v-slot:icon>
+                <v-avatar>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                  />
+                </v-avatar>
+              </template>
+              <template v-slot:opposite>
+                <span>2022 - Present</span>
+              </template>
+              <v-card class="elevation-2">
+                <v-card-title class="">
+                  MGC Electrotechno (Thailand).Co.,Ltd
+                </v-card-title>
+                <v-card-text>IT Staff</v-card-text>
+              </v-card>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card>
+      </v-tab-item>
+    </v-tabs-items>
+    <div class="pa-4">
+
+    </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      tab: null,
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    };
+  },
+};
 </script>
