@@ -29,73 +29,12 @@
       <v-tab-item :value="'tab-1'">
         <v-row class="pt-4 pb-4">
           <v-col cols="12" sm="3" md="3">
-            <v-card class="mx-auto" max-width="344">
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200px"
-              ></v-img>
-
-              <v-card-title> Top western road trips </v-card-title>
-
-              <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
-
-              <v-card-actions>
-                <v-btn color="orange lighten-2" text> Explore </v-btn>
-              </v-card-actions>
-            </v-card> </v-col
-          ><v-col cols="12" sm="3" md="3">
-            <v-card class="mx-auto" max-width="344">
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200px"
-              ></v-img>
-
-              <v-card-title> Top western road trips </v-card-title>
-
-              <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
-
-              <v-card-actions>
-                <v-btn color="orange lighten-2" text> Explore </v-btn>
-              </v-card-actions>
-            </v-card> </v-col
-          ><v-col cols="12" sm="3" md="3">
-            <v-card class="mx-auto" max-width="344">
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200px"
-              ></v-img>
-
-              <v-card-title> Top western road trips </v-card-title>
-
-              <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
-
-              <v-card-actions>
-                <v-btn color="orange lighten-2" text> Explore </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-          <v-col cols="12" sm="3" md="3">
-            <v-card class="mx-auto" max-width="344">
-              <v-img
-                src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-                height="200px"
-              ></v-img>
-
-              <v-card-title> Top western road trips </v-card-title>
-
-              <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle>
-
-              <v-card-actions>
-                <v-btn color="orange lighten-2" text> Explore </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-tab-item>
-      <v-tab-item :value="'tab-2'">
-        <v-row class="pt-4 pb-4">
-          <v-col cols="12" sm="3" md="3">
-            <v-card class="mx-auto" max-width="344">
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+              target="_blank"
+            >
               <v-img
                 src="https://ph02.tci-thaijo.org/public/journals/273/cover_issue_16756_en_US.jpg"
                 height="200px"
@@ -117,7 +56,146 @@
                   text
                   href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
                   target="_blank"
-                  
+                >
+                  View
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="3" md="3">
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+              target="_blank"
+            >
+              <v-img
+                src="https://ph02.tci-thaijo.org/public/journals/273/cover_issue_16756_en_US.jpg"
+                height="200px"
+              ></v-img>
+
+              <v-card-title>
+                Sugar Cane Red Stripe Disease Detection using YOLO CNN of Deep
+                Learning Technique</v-card-title
+              >
+
+              <v-card-subtitle>
+                Vol. 8 No. 2 (2022): July - December
+              </v-card-subtitle>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="indigo darken-4"
+                  text
+                  href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+                  target="_blank"
+                >
+                  View
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="3" md="3">
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+              target="_blank"
+            >
+              <v-img
+                src="https://ph02.tci-thaijo.org/public/journals/273/cover_issue_16756_en_US.jpg"
+                height="200px"
+              ></v-img>
+
+              <v-card-title>
+                Sugar Cane Red Stripe Disease Detection using YOLO CNN of Deep
+                Learning Technique</v-card-title
+              >
+
+              <v-card-subtitle>
+                Vol. 8 No. 2 (2022): July - December
+              </v-card-subtitle>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="indigo darken-4"
+                  text
+                  href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+                  target="_blank"
+                >
+                  View
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="3" md="3">
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+              target="_blank"
+            >
+              <v-img
+                src="https://ph02.tci-thaijo.org/public/journals/273/cover_issue_16756_en_US.jpg"
+                height="200px"
+              ></v-img>
+
+              <v-card-title>
+                Sugar Cane Red Stripe Disease Detection using YOLO CNN of Deep
+                Learning Technique</v-card-title
+              >
+
+              <v-card-subtitle>
+                Vol. 8 No. 2 (2022): July - December
+              </v-card-subtitle>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="indigo darken-4"
+                  text
+                  href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+                  target="_blank"
+                >
+                  View
+                </v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-tab-item>
+      <v-tab-item :value="'tab-2'">
+        <v-row class="pt-4 pb-4">
+          <v-col cols="12" sm="3" md="3">
+            <v-card
+              class="mx-auto"
+              max-width="344"
+              href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+              target="_blank"
+            >
+              <v-img
+                src="https://ph02.tci-thaijo.org/public/journals/273/cover_issue_16756_en_US.jpg"
+                height="200px"
+              ></v-img>
+
+              <v-card-title>
+                Sugar Cane Red Stripe Disease Detection using YOLO CNN of Deep
+                Learning Technique</v-card-title
+              >
+
+              <v-card-subtitle>
+                Vol. 8 No. 2 (2022): July - December
+              </v-card-subtitle>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                  color="indigo darken-4"
+                  text
+                  href="https://ph02.tci-thaijo.org/index.php/mijet/article/view/244320"
+                  target="_blank"
                 >
                   View
                 </v-btn>

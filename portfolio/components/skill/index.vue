@@ -16,7 +16,7 @@
 
                 <v-rating
                   :value="4"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -28,7 +28,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -43,7 +43,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -55,7 +55,7 @@
 
                 <v-rating
                   :value="4"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -70,7 +70,7 @@
 
                 <v-rating
                   :value="4"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -82,7 +82,7 @@
 
                 <v-rating
                   :value="4"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -97,7 +97,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -109,7 +109,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -132,7 +132,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -144,7 +144,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -159,7 +159,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
@@ -171,7 +171,7 @@
 
                 <v-rating
                   :value="3"
-                  color="amber"
+                  color="grey darken-3"
                   dense
                   half-increments
                   readonly
