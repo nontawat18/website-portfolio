@@ -169,7 +169,7 @@
                 <v-card-title class="">
                   Morange solution MGC Electrotechno (Thailand).Co.,Ltd
                 </v-card-title>
-                <v-card-text>Front-End Developper</v-card-text>
+                <v-card-text>Front-End Developer</v-card-text>
               </v-card>
             </v-timeline-item>
             <v-timeline-item large>
