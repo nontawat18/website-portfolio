@@ -30,10 +30,10 @@
           </v-col>
           <v-col cols="12" sm="12" md="12">
             <p style="color: grey; padding: 8px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-              cumque. Dolorem, odio neque vel dolore saepe, non quaerat,
-              eligendi temporibus nisi veritatis repellendus reiciendis?
-              Accusantium quo esse facere aliquam nobis!
+              Working on the design and development of the system in the
+              platform, website, line liff, Responsive web. About online
+              shopping and a system to track the work of people within the
+              company.
             </p>
           </v-col>
           <v-col cols="12" sm="12" md="12">
@@ -125,8 +125,8 @@ strong {
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg);
-  background-size: 100%;
+  background: url("~/assets/f2.jpg");
+  background-size: 60%;
   background-position: center center;
   display: flex;
   color: #003;

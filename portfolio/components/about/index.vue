@@ -7,26 +7,24 @@
     <v-row class="pt-4 pb-10">
       <v-col cols="12" sm="6" md="6" class="text-center">
         <v-card class="mx-auto" width="500" elevation="5">
-          <v-img
+          <!-- <v-img
             class="white--text align-end"
             height="300px"
             src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
           >
-          </v-img>
-          <!-- 
-          <v-card-subtitle class="pb-0"> Number 10 </v-card-subtitle>
-
-          <v-card-text class="text--primary">
-            <div>Whitehaven Beach</div>
-
-            <div>Whitsunday Island, Whitsunday Islands</div>
-          </v-card-text>
-
-          <v-card-actions>
-            <v-btn color="orange" text> Share </v-btn>
-
-            <v-btn color="orange" text> Explore </v-btn>
-          </v-card-actions> -->
+          </v-img> -->
+          <v-carousel
+            hide-delimiters
+            cycle
+            show-arrows-on-hover
+            height="300px"
+          >
+            <v-carousel-item
+              v-for="(item, i) in items"
+              :key="i"
+              :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="6">
@@ -66,20 +64,27 @@
           </v-col>
           <v-col cols="12" sm="12">
             <p style="color: grey; padding: 8px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-              cumque. Dolorem, odio neque vel dolore saepe, non quaerat,
-              eligendi temporibus nisi veritatis repellendus reiciendis?
-              Accusantium quo esse facere aliquam nobis!
+              Working on forntend developer of the system in the
+              platform, website, line liff, Responsive web. About online
+              shopping and a system to track the work of people within the
+              company.
             </p>
           </v-col>
         </v-row>
       </v-col>
     </v-row>
 
-    <v-tabs v-model="tab" background-color="wihte" centered icons-and-text color="grey darken-3" class="pb-6">
+    <v-tabs
+      v-model="tab"
+      background-color="wihte"
+      centered
+      icons-and-text
+      color="grey darken-3"
+      class="pb-6"
+    >
       <v-tabs-slider></v-tabs-slider>
 
-      <v-tab href="#tab-1" >
+      <v-tab href="#tab-1">
         Educations
         <v-icon>mdi-school</v-icon>
       </v-tab>
@@ -98,7 +103,7 @@
               <template v-slot:icon>
                 <v-avatar>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                    src="~/assets/f2.jpg"
                   />
                 </v-avatar>
               </template>
@@ -116,7 +121,7 @@
               <template v-slot:icon>
                 <v-avatar>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                    src="~/assets/f2.jpg"
                   />
                 </v-avatar>
               </template>
@@ -140,7 +145,7 @@
               <template v-slot:icon>
                 <v-avatar>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                    src="~/assets/f2.jpg"
                   />
                 </v-avatar>
               </template>
@@ -148,9 +153,7 @@
                 <span>2021 (intern)</span>
               </template>
               <v-card class="elevation-2">
-                <v-card-title class="">
-                  KhonKean Univercity
-                </v-card-title>
+                <v-card-title class=""> KhonKean Univercity </v-card-title>
                 <v-card-text>Programmer</v-card-text>
               </v-card>
             </v-timeline-item>
@@ -158,7 +161,7 @@
               <template v-slot:icon>
                 <v-avatar>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                    src="~/assets/f2.jpg"
                   />
                 </v-avatar>
               </template>
@@ -176,7 +179,7 @@
               <template v-slot:icon>
                 <v-avatar>
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Choi_Soo-bin_%28%EC%B5%9C%EC%88%98%EB%B9%88%29_220121.jpg"
+                    src="~/assets/f2.jpg"
                   />
                 </v-avatar>
               </template>
@@ -194,15 +197,27 @@
         </v-card>
       </v-tab-item>
     </v-tabs-items>
-    <div class="pa-4">
-
-    </div>
+    <div class="pa-4"></div>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
+      items: [
+        {
+          src: 'https://cdn.pixabay.com/photo/2021/01/21/21/48/mountain-ranges-5938639_960_720.jpg',
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+        },
+        {
+          src: "https://cdn.pixabay.com/photo/2019/09/21/13/09/mauritius-4493878_960_720.jpg",
+        },
+        {
+          src: "https://cdn.pixabay.com/photo/2015/09/04/17/40/sunset-922411_960_720.jpg",
+        },
+      ],
       tab: null,
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     };

@@ -82,7 +82,7 @@
               <v-icon dark> mdi-github </v-icon>
             </v-btn>
           </v-col>
-          <p style="color: grey; padding: 8px">+66 92 443 4736</p>
+          <p style="color: grey; padding: 8px">+66 92 443 4736 <br/> nontawatwichapha1998@gmail.com</p>
     </v-col>
   </div>
 </template>
